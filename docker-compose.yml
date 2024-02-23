@@ -43,7 +43,7 @@ services:
   nginx:
     image: nginx:latest
     ports:
-      - "5002:5002"
+      - "80:5002"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./build:/usr/share/nginx/html
